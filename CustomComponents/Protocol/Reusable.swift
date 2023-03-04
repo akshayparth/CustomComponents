@@ -6,12 +6,12 @@
 
 import UIKit
 
-public protocol Reusable: class {
+public protocol Reusable: AnyObject {
     static var reuseIdentifier: String { get }
 }
 
 public extension Reusable {
-    public static var reuseIdentifier: String {
+    static var reuseIdentifier: String {
         // I like to use the class's name as an identifier
         // so this makes a decent default value.
         return String(describing: Self.self)

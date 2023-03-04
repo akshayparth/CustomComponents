@@ -5,7 +5,7 @@
 
 import UIKit
 
-public protocol FormTableSectionHeaderTheme: class {
+public protocol FormTableSectionHeaderTheme: AnyObject {
     func sectionHeaderBackgroundColor() -> UIColor
     func sectionHeaderTextColor() -> UIColor
 }
