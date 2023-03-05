@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "CustomComponents"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.summary      = "This is the best CustomComponents Framework."
   spec.description  = "This is the best framework ever. It will help you to get all the common files to your project"
 
@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
   spec.author             = { "Akshay Raiyani" => "akshay.raiyani@parth.com" }
   spec.platform     = :ios, "12.0"
   spec.source       = { :git => "https://github.com/akshayparth/CustomComponents.git", :tag => spec.version.to_s }
-  spec.source_files  = "CustomComponents/**/*.{swift}"
+  spec.source_files  = "CustomComponents/**/*.{swift,storyboard}"
   
   #spec.exclude_files = "Classes/Exclude"
   # spec.resource  = "icon.png"
@@ -19,7 +19,7 @@ Pod::Spec.new do |spec|
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
 
-  spec.framework  = "UIKit", "AVFoundation", "Foundation"
+  spec.framework  = "UIKit", "AVFoundation", "Foundation", "CoreLocation"
   spec.swift_versions = "5.0"
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iGZ-37-Mjd">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search Location-->
+        <scene sceneID="KtS-DT-p3p">
+            <objects>
+                <viewController storyboardIdentifier="LocationPickerController" title="Search Location" id="iGZ-37-Mjd" customClass="LocationPickerController" customModule="ACEApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rk3-1E-NeO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b3s-Zw-PDl" userLabel="Search Field Container">
+                                <rect key="frame" x="0.0" y="20" width="375" height="102"/>
+                                <subviews>
+                                    <searchBar contentMode="redraw" placeholder="Enter Location to search" translatesAutoresizingMaskIntoConstraints="NO" id="ljh-Bw-sFb">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="iGZ-37-Mjd" id="NaN-5L-rt4"/>
+                                        </connections>
+                                    </searchBar>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ih-JA-4FB">
+                                        <rect key="frame" x="8" y="64" width="359" height="30"/>
+                                        <color key="backgroundColor" red="0.83921568629999999" green="0.74901960779999999" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Detect Current Location">
+                                            <color key="titleColor" red="0.50980392159999999" green="0.27450980390000002" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="detectCurrentLocation:" destination="iGZ-37-Mjd" eventType="touchUpInside" id="FMc-bN-9gH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="1ih-JA-4FB" firstAttribute="top" secondItem="ljh-Bw-sFb" secondAttribute="bottom" constant="8" id="Czy-dO-0yK"/>
+                                    <constraint firstItem="1ih-JA-4FB" firstAttribute="leading" secondItem="b3s-Zw-PDl" secondAttribute="leading" constant="8" id="Lrz-pr-WPm"/>
+                                    <constraint firstItem="ljh-Bw-sFb" firstAttribute="leading" secondItem="b3s-Zw-PDl" secondAttribute="leading" id="UvG-z7-3xe"/>
+                                    <constraint firstAttribute="trailing" secondItem="ljh-Bw-sFb" secondAttribute="trailing" id="c1Y-C2-7V1"/>
+                                    <constraint firstItem="ljh-Bw-sFb" firstAttribute="top" secondItem="b3s-Zw-PDl" secondAttribute="top" id="eMf-yB-Odg"/>
+                                    <constraint firstAttribute="trailing" secondItem="1ih-JA-4FB" secondAttribute="trailing" constant="8" id="rfw-qK-eD3"/>
+                                    <constraint firstAttribute="bottom" secondItem="1ih-JA-4FB" secondAttribute="bottom" constant="8" id="zfe-aS-cLO"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="drG-Fw-nUP">
+                                <rect key="frame" x="0.0" y="122" width="375" height="545"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <tableView key="tableFooterView" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="T5D-Jf-hvp">
+                                    <rect key="frame" x="0.0" y="102" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </tableView>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlacemarkTableViewCell" textLabel="ajB-XA-Mir" rowHeight="74" style="IBUITableViewCellStyleDefault" id="2Yo-qk-fef" customClass="PlacemarkTableViewCell" customModule="ACEApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="74"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2Yo-qk-fef" id="1L9-XE-oNJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="73.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ajB-XA-Mir">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="73.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="iGZ-37-Mjd" id="Lyr-Ex-sR8"/>
+                                    <outlet property="delegate" destination="iGZ-37-Mjd" id="vPh-qy-KAG"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="b3s-Zw-PDl" firstAttribute="trailing" secondItem="f5n-r8-dGX" secondAttribute="trailing" id="Q5S-gH-c8R"/>
+                            <constraint firstItem="drG-Fw-nUP" firstAttribute="leading" secondItem="f5n-r8-dGX" secondAttribute="leading" id="gVK-1M-seX"/>
+                            <constraint firstItem="drG-Fw-nUP" firstAttribute="top" secondItem="b3s-Zw-PDl" secondAttribute="bottom" id="irQ-5N-8df"/>
+                            <constraint firstItem="b3s-Zw-PDl" firstAttribute="leading" secondItem="f5n-r8-dGX" secondAttribute="leading" id="t6j-b2-Lmj"/>
+                            <constraint firstItem="f5n-r8-dGX" firstAttribute="trailing" secondItem="drG-Fw-nUP" secondAttribute="trailing" id="ucM-We-iA7"/>
+                            <constraint firstItem="f5n-r8-dGX" firstAttribute="top" secondItem="b3s-Zw-PDl" secondAttribute="top" id="yry-LV-Iq8"/>
+                            <constraint firstItem="f5n-r8-dGX" firstAttribute="bottom" secondItem="drG-Fw-nUP" secondAttribute="bottom" id="zCy-1S-DQg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="f5n-r8-dGX"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Search Location" id="jYT-hy-jmg"/>
+                    <connections>
+                        <outlet property="detectCurrentLocationButton" destination="1ih-JA-4FB" id="133-Hh-iNL"/>
+                        <outlet property="locationSearchBar" destination="ljh-Bw-sFb" id="QGJ-3L-Wx5"/>
+                        <outlet property="resultsTableView" destination="drG-Fw-nUP" id="qEt-hS-Lks"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vhx-9r-OcS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="149.59999999999999" y="238.83058470764618"/>
+        </scene>
+    </scenes>
+</document>
