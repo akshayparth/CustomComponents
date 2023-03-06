@@ -5,7 +5,6 @@
 
 import UIKit
 import CoreLocation
-import ViewHelper
 
 public protocol LocationPickerControllerProvider {
     func provideLocationPickerController(with selectedLocationDelegate: SelectedLocationDelegate) -> LocationPickerController

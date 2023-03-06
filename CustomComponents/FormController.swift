@@ -7,7 +7,6 @@
 //
 
 import UIKit
-//import ViewHelper
 
 open class FormController: UIViewController, UITextFieldDelegate {
     private var keyboardHeight: CGFloat = 0
