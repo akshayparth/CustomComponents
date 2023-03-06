@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F3BE5EF129B5D1BD0062D4DE /* ReverseGeocodeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BE5EEC29B5D1BD0062D4DE /* ReverseGeocodeManager.swift */; };
+		F3BE5EF229B5D1BD0062D4DE /* GeocodeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BE5EED29B5D1BD0062D4DE /* GeocodeManager.swift */; };
+		F3BE5EF329B5D1BD0062D4DE /* LocationDetectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BE5EEE29B5D1BD0062D4DE /* LocationDetectionManager.swift */; };
+		F3BE5EF429B5D1BD0062D4DE /* LocationPickerConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BE5EF029B5D1BD0062D4DE /* LocationPickerConfigurator.swift */; };
+		F3BE5EFA29B5D1EA0062D4DE /* LocationPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BE5EF629B5D1EA0062D4DE /* LocationPickerController.swift */; };
+		F3BE5EFB29B5D1EA0062D4DE /* LocationPicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3BE5EF729B5D1EA0062D4DE /* LocationPicker.storyboard */; };
+		F3BE5EFC29B5D1EA0062D4DE /* PlacemarkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BE5EF829B5D1EA0062D4DE /* PlacemarkTableViewCell.swift */; };
+		F3BE5EFD29B5D1EA0062D4DE /* Placemark+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BE5EF929B5D1EA0062D4DE /* Placemark+Utilities.swift */; };
+		F3BE5F0329B5D2340062D4DE /* LocationDetectionPresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BE5EFE29B5D2340062D4DE /* LocationDetectionPresenterDelegate.swift */; };
+		F3BE5F0429B5D2340062D4DE /* LocationsDetectedDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BE5EFF29B5D2340062D4DE /* LocationsDetectedDelegate.swift */; };
+		F3BE5F0529B5D2340062D4DE /* SelectedLocationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BE5F0029B5D2340062D4DE /* SelectedLocationDelegate.swift */; };
+		F3BE5F0629B5D2340062D4DE /* GeocodeResultsHandlerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BE5F0129B5D2340062D4DE /* GeocodeResultsHandlerDelegate.swift */; };
+		F3BE5F0729B5D2340062D4DE /* ReverseGeocodeResultsHandlerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BE5F0229B5D2340062D4DE /* ReverseGeocodeResultsHandlerDelegate.swift */; };
 		F3F8C22C29B3B0F0001AB994 /* CustomComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = F3F8C22B29B3B0F0001AB994 /* CustomComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F3F8C23929B3B138001AB994 /* FormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F8C23229B3B137001AB994 /* FormController.swift */; };
 		F3F8C23A29B3B138001AB994 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F8C23329B3B137001AB994 /* CustomButton.swift */; };
@@ -39,6 +52,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F3BE5EEC29B5D1BD0062D4DE /* ReverseGeocodeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReverseGeocodeManager.swift; sourceTree = "<group>"; };
+		F3BE5EED29B5D1BD0062D4DE /* GeocodeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeocodeManager.swift; sourceTree = "<group>"; };
+		F3BE5EEE29B5D1BD0062D4DE /* LocationDetectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDetectionManager.swift; sourceTree = "<group>"; };
+		F3BE5EF029B5D1BD0062D4DE /* LocationPickerConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationPickerConfigurator.swift; sourceTree = "<group>"; };
+		F3BE5EF629B5D1EA0062D4DE /* LocationPickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationPickerController.swift; sourceTree = "<group>"; };
+		F3BE5EF729B5D1EA0062D4DE /* LocationPicker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LocationPicker.storyboard; sourceTree = "<group>"; };
+		F3BE5EF829B5D1EA0062D4DE /* PlacemarkTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacemarkTableViewCell.swift; sourceTree = "<group>"; };
+		F3BE5EF929B5D1EA0062D4DE /* Placemark+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Placemark+Utilities.swift"; sourceTree = "<group>"; };
+		F3BE5EFE29B5D2340062D4DE /* LocationDetectionPresenterDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDetectionPresenterDelegate.swift; sourceTree = "<group>"; };
+		F3BE5EFF29B5D2340062D4DE /* LocationsDetectedDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsDetectedDelegate.swift; sourceTree = "<group>"; };
+		F3BE5F0029B5D2340062D4DE /* SelectedLocationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedLocationDelegate.swift; sourceTree = "<group>"; };
+		F3BE5F0129B5D2340062D4DE /* GeocodeResultsHandlerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeocodeResultsHandlerDelegate.swift; sourceTree = "<group>"; };
+		F3BE5F0229B5D2340062D4DE /* ReverseGeocodeResultsHandlerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReverseGeocodeResultsHandlerDelegate.swift; sourceTree = "<group>"; };
 		F3F8C22829B3B0F0001AB994 /* CustomComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CustomComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F8C22B29B3B0F0001AB994 /* CustomComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomComponents.h; sourceTree = "<group>"; };
 		F3F8C23229B3B137001AB994 /* FormController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormController.swift; sourceTree = "<group>"; };
@@ -82,6 +108,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F3BE5EEB29B5D1BD0062D4DE /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				F3BE5EEC29B5D1BD0062D4DE /* ReverseGeocodeManager.swift */,
+				F3BE5EED29B5D1BD0062D4DE /* GeocodeManager.swift */,
+				F3BE5EEE29B5D1BD0062D4DE /* LocationDetectionManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		F3BE5EEF29B5D1BD0062D4DE /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				F3BE5EF029B5D1BD0062D4DE /* LocationPickerConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		F3BE5EF529B5D1EA0062D4DE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3BE5EF629B5D1EA0062D4DE /* LocationPickerController.swift */,
+				F3BE5EF729B5D1EA0062D4DE /* LocationPicker.storyboard */,
+				F3BE5EF829B5D1EA0062D4DE /* PlacemarkTableViewCell.swift */,
+				F3BE5EF929B5D1EA0062D4DE /* Placemark+Utilities.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F3F8C21E29B3B0F0001AB994 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +156,9 @@
 		F3F8C22A29B3B0F0001AB994 /* CustomComponents */ = {
 			isa = PBXGroup;
 			children = (
+				F3BE5EF529B5D1EA0062D4DE /* View */,
+				F3BE5EEF29B5D1BD0062D4DE /* Configurator */,
+				F3BE5EEB29B5D1BD0062D4DE /* DataManager */,
 				F3F8C26D29B3B3FC001AB994 /* ViewModel */,
 				F3F8C24529B3B2E8001AB994 /* Extension */,
 				F3F8C24A29B3B2E8001AB994 /* Protocol */,
@@ -144,6 +202,11 @@
 		F3F8C24A29B3B2E8001AB994 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				F3BE5F0129B5D2340062D4DE /* GeocodeResultsHandlerDelegate.swift */,
+				F3BE5EFE29B5D2340062D4DE /* LocationDetectionPresenterDelegate.swift */,
+				F3BE5EFF29B5D2340062D4DE /* LocationsDetectedDelegate.swift */,
+				F3BE5F0229B5D2340062D4DE /* ReverseGeocodeResultsHandlerDelegate.swift */,
+				F3BE5F0029B5D2340062D4DE /* SelectedLocationDelegate.swift */,
 				F3F8C26929B3B369001AB994 /* IntMinMaxRange.swift */,
 				F3F8C26729B3B369001AB994 /* StringRawValue.swift */,
 				F3F8C26829B3B369001AB994 /* UserDefaultsStorable.swift */,
@@ -236,6 +299,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3BE5EFB29B5D1EA0062D4DE /* LocationPicker.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,11 +318,17 @@
 				F3F8C25429B3B2E8001AB994 /* Bool+ViewUtilities.swift in Sources */,
 				F3F8C26B29B3B369001AB994 /* UserDefaultsStorable.swift in Sources */,
 				F3F8C25B29B3B2E8001AB994 /* RowSelectionHandler.swift in Sources */,
+				F3BE5F0629B5D2340062D4DE /* GeocodeResultsHandlerDelegate.swift in Sources */,
 				F3F8C26329B3B359001AB994 /* String+ModelUtilities.swift in Sources */,
 				F3F8C25629B3B2E8001AB994 /* UIView+Utilities.swift in Sources */,
+				F3BE5EF429B5D1BD0062D4DE /* LocationPickerConfigurator.swift in Sources */,
+				F3BE5EFA29B5D1EA0062D4DE /* LocationPickerController.swift in Sources */,
+				F3BE5EF329B5D1BD0062D4DE /* LocationDetectionManager.swift in Sources */,
 				F3F8C25229B3B2E8001AB994 /* KeyboardDismissController.swift in Sources */,
 				F3F8C25829B3B2E8001AB994 /* ViewControllerPresenter.swift in Sources */,
+				F3BE5EFD29B5D1EA0062D4DE /* Placemark+Utilities.swift in Sources */,
 				F3F8C23E29B3B138001AB994 /* CustomTextView.swift in Sources */,
+				F3BE5F0729B5D2340062D4DE /* ReverseGeocodeResultsHandlerDelegate.swift in Sources */,
 				F3F8C25D29B3B2E8001AB994 /* AllowsImagePick.swift in Sources */,
 				F3F8C25729B3B2E8001AB994 /* UIViewController+Utilities.swift in Sources */,
 				F3F8C26F29B3B3FC001AB994 /* FormTableViewModel.swift in Sources */,
@@ -266,13 +336,19 @@
 				F3F8C25329B3B2E8001AB994 /* FormTableController.swift in Sources */,
 				F3F8C23C29B3B138001AB994 /* CustomImageView.swift in Sources */,
 				F3F8C25C29B3B2E8001AB994 /* SegueIdentifiable.swift in Sources */,
+				F3BE5EF229B5D1BD0062D4DE /* GeocodeManager.swift in Sources */,
+				F3BE5EFC29B5D1EA0062D4DE /* PlacemarkTableViewCell.swift in Sources */,
+				F3BE5F0529B5D2340062D4DE /* SelectedLocationDelegate.swift in Sources */,
+				F3BE5F0429B5D2340062D4DE /* LocationsDetectedDelegate.swift in Sources */,
 				F3F8C26A29B3B369001AB994 /* StringRawValue.swift in Sources */,
+				F3BE5EF129B5D1BD0062D4DE /* ReverseGeocodeManager.swift in Sources */,
 				F3F8C25A29B3B2E8001AB994 /* Reusable.swift in Sources */,
 				F3F8C26629B3B359001AB994 /* Encodable+Dictionary.swift in Sources */,
 				F3F8C26C29B3B369001AB994 /* IntMinMaxRange.swift in Sources */,
 				F3F8C25E29B3B2E8001AB994 /* SegueHandler.swift in Sources */,
 				F3F8C23A29B3B138001AB994 /* CustomButton.swift in Sources */,
 				F3F8C23929B3B138001AB994 /* FormController.swift in Sources */,
+				F3BE5F0329B5D2340062D4DE /* LocationDetectionPresenterDelegate.swift in Sources */,
 				F3F8C25929B3B2E8001AB994 /* StoryboardIdentifiable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

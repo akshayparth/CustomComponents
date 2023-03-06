@@ -5,7 +5,7 @@
 
 import UIKit
 
-protocol LocationPermissionPresenterDelegate: class {
+protocol LocationPermissionPresenterDelegate: AnyObject {
     func alertUserForLocationPermission()
     var customAlertEnableLocationTitle: String { get }
     var customAlertEnableLocationMessage: String { get }

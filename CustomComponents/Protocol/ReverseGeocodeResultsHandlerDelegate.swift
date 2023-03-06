@@ -6,7 +6,7 @@
 import Foundation
 import CoreLocation
 
-protocol ReverseGeocodeResultsHandlerDelegate: class {
+protocol ReverseGeocodeResultsHandlerDelegate: AnyObject {
     func onReverseGeocodeNoLocationsFound(dueTo error: Error)
     func onReverseGeocodeNoLocationsFound()
     func onReverseGeocodeLocationsFound(placemarks: [CLPlacemark])

@@ -6,7 +6,7 @@
 import Foundation
 import CoreLocation
 
-protocol GeocodeResultsHandlerDelegate: class {
+protocol GeocodeResultsHandlerDelegate: AnyObject {
     func onGeocodeNoLocationsFound(dueTo error: Error)
     func onGeocodeNoLocationsFound()
     func onGeocodeLocationsFound(placemarks: [CLPlacemark])
