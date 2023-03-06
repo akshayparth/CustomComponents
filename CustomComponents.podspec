@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "CustomComponents"
-  spec.version      = "1.0.4"
+  spec.version      = "1.0.5"
   spec.summary      = "This is the best CustomComponents Framework."
   spec.description  = "This is the best framework ever. It will help you to get all the common files to your project"
 
